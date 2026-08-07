@@ -1,9 +1,28 @@
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import ShaderBackground from "./components/ShaderBackground";
+
 export default function App() {
   return (
-    <div className="min-h-screen bg-black flex items-center justify-center">
-      <h1 className="text-6xl font-bold text-yellow-400">
-        Tailwind is Working 🚀
-      </h1>
-    </div>
+    <>
+      <ShaderBackground />
+
+      <Navbar />
+
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Contact />
+      </main>
+
+      <Footer />
+    </>
   );
 }
