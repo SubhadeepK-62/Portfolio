@@ -1,0 +1,15 @@
+export const skills = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "React",
+  "Tailwind CSS",
+  "C",
+  "Python",
+  "Git",
+  "GitHub",
+  "SQL",
+  "Figma",
+  "Adobe Premiere Pro",
+  "Adobe Photoshop",
+];
