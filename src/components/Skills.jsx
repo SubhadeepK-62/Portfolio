@@ -1,9 +1,13 @@
 import { skills } from "../data/skills";
+import useSectionObserver from "../hooks/useSectionObserver";
 
 export default function Skills() {
+  const ref = useSectionObserver("skills");
+
   return (
     <section
       id="skills"
+      ref={ref}
       className="min-h-screen flex items-center px-6 py-20"
     >
       <div className="max-w-6xl mx-auto w-full">

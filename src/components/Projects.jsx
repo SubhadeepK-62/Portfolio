@@ -1,9 +1,13 @@
 import { projects } from "../data/projects";
+import useSectionObserver from "../hooks/useSectionObserver";
 
 export default function Projects() {
+  const ref = useSectionObserver("projects");
+
   return (
     <section
       id="projects"
+      ref={ref}
       className="min-h-screen flex items-center px-6 py-20"
     >
       <div className="max-w-6xl mx-auto w-full">

@@ -1,7 +1,9 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import useSectionObserver from "../hooks/useSectionObserver";
 
 export default function Contact() {
+  const ref = useSectionObserver("contact");
   const form = useRef();
   const [status, setStatus] = useState("");
 
@@ -29,6 +31,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
+      ref={ref}
       className="min-h-screen flex items-center px-6 py-20"
     >
       <div className="max-w-4xl mx-auto w-full">
