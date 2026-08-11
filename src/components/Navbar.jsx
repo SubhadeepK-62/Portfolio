@@ -20,8 +20,8 @@ export default function Navbar() {
   const { activeSection } = useActiveSection();
 
   return (
-    <nav className="fixed bottom-10 left-1/2 -translate-x-1/2 z-50 rounded-full border border-yellow-500/20 bg-[#131313]/90 backdrop-blur-xl px-8 py-4 shadow-2xl">
-      <div className="flex items-center gap-8">
+    <nav className="fixed top-10 left-1/2 -translate-x-1/2 z-200 rounded-full border border-yellow-500/20 bg-[#131313]/50 backdrop-blur-lg px-10 py-1 shadow-2xl">
+      <div className="flex items-center gap-15">
         {navItems.map(({ id, label, icon: Icon }) => {
           const active = activeSection === id;
 

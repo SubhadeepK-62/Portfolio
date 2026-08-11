@@ -1,15 +1,39 @@
 export const skills = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "React",
-  "Tailwind CSS",
-  "C",
-  "Python",
-  "Git",
-  "GitHub",
-  "SQL",
-  "Figma",
-  "Adobe Premiere Pro",
-  "Adobe Photoshop",
+  {
+    category: "Frontend",
+    items: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "Tailwind CSS",
+      "Vite",
+    ],
+  },
+
+  {
+    category: "Programming",
+    items: [
+      "C",
+      "Python",
+      "SQL",
+    ],
+  },
+
+  {
+    category: "Tools",
+    items: [
+      "Git",
+      "GitHub",
+      "Figma",
+    ],
+  },
+
+  {
+    category: "Creative",
+    items: [
+      "Adobe Photoshop",
+      "Adobe Premiere Pro",
+    ],
+  },
 ];
