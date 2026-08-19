@@ -1,5 +1,6 @@
 import { skills } from "../data/skills";
 import useSectionObserver from "../hooks/useSectionObserver";
+import { motion } from "framer-motion";
 
 export default function Skills() {
   const ref = useSectionObserver("skills");
@@ -20,10 +21,6 @@ export default function Skills() {
         </h1>
       </div>
       <div className="max-w-6xl mx-auto w-full">
-        <p className="text-yellow-400 uppercase tracking-[0.3em] mb-4">
-          Skills
-        </p>
-
         <h2
           className="text-5xl md:text-7xl mb-12"
           style={{ fontFamily: "Bebas Neue" }}
@@ -31,29 +28,36 @@ export default function Skills() {
           WHAT I USE
         </h2>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {skills.map((group) => (
-            <div
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {skills.map((group, index) => (
+            <motion.div
               key={group.category}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{
+                duration: 0.5,
+                delay: index * 0.1,
+              }}
               className="
-        rounded-3xl
-         border
-         border-yellow-400/10
-         bg-[#0d0d0d]/20
-         backdrop-blur-sm
-          p-8
-          min-h-340px
+      rounded-3xl
+      border
+      border-yellow-400/10
+      bg-[#0d0d0d]/20
+      backdrop-blur-sm
+      p-6 md:p-8
+      min-h-340px
 
-          flex
-          flex-col
+      flex
+      flex-col
 
-          transition-all
-          duration-300
+      transition-all
+      duration-300
 
-         hover:border-yellow-400/40
-          hover:-translate-y-2
-          hover:shadow-[0_0_30px_rgba(212,175,55,0.1)]
-        "
+      hover:border-yellow-400/40
+      hover:-translate-y-2
+      hover:shadow-[0_0_30px_rgba(212,175,55,0.1)]
+    "
             >
               <h3 className="text-yellow-400 text-xl font-semibold mb-6">
                 {group.category}
@@ -64,27 +68,27 @@ export default function Skills() {
                   <span
                     key={skill}
                     className="
-                   px-4
-                   py-3
-                   rounded-xl
+            px-4
+            py-3
+            rounded-xl
 
-                   border
-                   border-yellow-400/10
+            border
+            border-yellow-400/10
 
-                   text-gray-300
+            text-gray-300
 
-                  transition-all
-                    duration-300
+            transition-all
+            duration-300
 
-                   hover:border-yellow-400/40
-                   hover:text-yellow-400
-                  "
+            hover:border-yellow-400/40
+            hover:text-yellow-400
+          "
                   >
                     {skill}
                   </span>
                 ))}
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

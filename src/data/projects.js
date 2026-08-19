@@ -6,8 +6,8 @@ export const projects = [
     description:
       "Personal portfolio built using React and Tailwind CSS to showcase projects, skills, and experience.",
     tech: ["React", "Tailwind CSS", "JavaScript"],
-    github: "",
-    live: "",
+    github: "j",
+    live: "k",
   },
 
   {
@@ -17,7 +17,7 @@ export const projects = [
     description:
       "AI-powered conversational interface for ARGO Ocean Data Discovery and Visualization using RAG and vector databases.",
     tech: ["React", "Flask", "PostgreSQL", "AI", "RAG"],
-    github: "",
-    live: "",
+    github: "l",
+    live: "m",
   },
 ];

@@ -1,5 +1,6 @@
 import { projects } from "../data/projects";
 import useSectionObserver from "../hooks/useSectionObserver";
+import { motion } from "framer-motion";
 
 export default function Projects() {
   const ref = useSectionObserver("projects");
@@ -20,9 +21,6 @@ export default function Projects() {
         </h1>
       </div>
       <div className="max-w-6xl mx-auto w-full">
-        <p className="text-yellow-400 uppercase tracking-[0.3em] mb-4">
-          Projects
-        </p>
 
         <h2
           className="text-5xl md:text-7xl mb-12"
@@ -32,26 +30,36 @@ export default function Projects() {
         </h2>
 
         <div className="grid md:grid-cols-2 gap-8">
-          {projects.map((project) => (
-            <div
+          {projects.map((project, index) => (
+            <motion.div
               key={project.id}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{
+                duration: 0.6,
+                delay: index * 0.1,
+              }}
               className="
-                group
-                relative
-                overflow-hidden
-               bg-[#111111]/70
-                backdrop-blur-md
-                border
-               border-yellow-400/20
-                rounded-32px
-                p-6
-                transition-all
-                duration-500
-               hover:border-yellow-400/50
-                hover:-translate-y-2
-                hover:shadow-[0_0_40px_rgba(212,175,55,0.08)]
-                min-h-260px flex flex-col justify-between
-              "
+      group
+      relative
+      overflow-hidden
+      bg-[#111111]/70
+      backdrop-blur-md
+      border
+      border-yellow-400/20
+      rounded-32px
+      p-5 md:p-6
+      transition-all
+      duration-500
+      hover:border-yellow-400/50
+      hover:-translate-y-2
+      hover:shadow-[0_0_40px_rgba(212,175,55,0.08)]
+      min-h-260px
+      flex
+      flex-col
+      justify-between
+    "
             >
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-500 bg-[radial-gradient(circle_at_top_right,rgba(212,175,55,0.08),transparent_50%)]"></div>
 
@@ -59,7 +67,7 @@ export default function Projects() {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-56 object-cover transition-all duration-500 group-hover:scale-105"
+                  className="w-full h-40 md:h-56 object-cover transition-all duration-700 group-hover:scale-105 group-hover:brightness-110"
                 />
               </div>
               <h3 className="relative text-2xl font-bold text-white mb-5">
@@ -74,22 +82,31 @@ export default function Projects() {
                 {project.tech.map((item) => (
                   <span
                     key={item}
-                    className="px-3 py-1 text-xs rounded-full bg-black/50 backdrop-blur-md border border-yellow-400/20 text-yellow-400 transition-all duration-300 hover:border-yellow-400"
+                    className="px-3 py-1 text-sm tracking-wide font-normal rounded-full bg-white/3 backdrop-blur-md text-yellow-400 transition-all duration-300 hover:border-yellow-400"
                   >
                     {item}
                   </span>
                 ))}
               </div>
 
-              <div className="flex gap-6 mt-auto relative">
+              <div className="flex flex-wrap gap-3 mt-auto relative">
                 {project.github && (
                   <a
                     href={project.github}
                     target="_blank"
                     rel="noreferrer"
-                    className="text-yellow-400 font-medium hover:translate-x-1 transition-all flex"
+                    className="flex items-center gap-2 px-4 py-2 rounded-xl border border-yellow-400/20 text-yellow-400 hover:border-yellow-400 transition-all duration-300"
                   >
-                    GitHub <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="20px" fill="#FACC15"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg>
+                    GitHub{" "}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="18px"
+                      viewBox="0 -960 960 960"
+                      width="20px"
+                      fill="#FACC15"
+                    >
+                      <path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z" />
+                    </svg>
                   </a>
                 )}
 
@@ -98,13 +115,22 @@ export default function Projects() {
                     href={project.live}
                     target="_blank"
                     rel="noreferrer"
-                    className="text-white flex font-medium hover:translate-x-1 transition-all"
+                    className=" flex items-center gap-2 px-4 py-2 rounded-xl bg-yellow-400 text-black font-medium hover:scale-105 transition-all duration-300"
                   >
-                    Live Demo <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="20px" fill="#FFFFFF"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg>
+                    Live Demo{"  "}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="18px"
+                      viewBox="0 -960 960 960"
+                      width="20px"
+                      fill="#000000"
+                    >
+                      <path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z" />
+                    </svg>
                   </a>
                 )}
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

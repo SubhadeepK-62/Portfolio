@@ -1,10 +1,4 @@
-import {
-  MdHome,
-  MdPerson,
-  MdBuild,
-  MdWork,
-  MdMail,
-} from "react-icons/md";
+import { MdHome, MdPerson, MdBuild, MdWork, MdMail } from "react-icons/md";
 
 import { useActiveSection } from "../context/ActiveSectionContext";
 
@@ -20,8 +14,8 @@ export default function Navbar() {
   const { activeSection } = useActiveSection();
 
   return (
-    <nav className="fixed top-10 left-1/2 -translate-x-1/2 z-200 rounded-full border border-yellow-500/20 bg-[#131313]/50 backdrop-blur-lg px-10 py-1 shadow-2xl">
-      <div className="flex items-center gap-15">
+    <nav className="fixed left-1/2 top-6 z-200 w-[min(72vw,310px)] -translate-x-1/2 rounded-full border border-yellow-500/20 bg-[#131313]/60 px-2 py-1.5 shadow-2xl backdrop-blur-lg md:top-10 md:w-[min(80vw,420px)] md:px-4 md:py-2 lg:w-[min(60vw,560px)]">
+      <div className="flex items-center justify-between gap-1 md:gap-2 lg:gap-4">
         {navItems.map(({ id, label, icon: Icon }) => {
           const active = activeSection === id;
 
@@ -32,16 +26,16 @@ export default function Navbar() {
               className="group flex flex-col items-center transition-all duration-300"
             >
               <Icon
-                size={22}
+                size={16}
                 className={
                   active
-                    ? "text-yellow-400 scale-125"
-                    : "text-gray-500 group-hover:text-yellow-400"
+                    ? "scale-125 text-yellow-400 md:text-[22px]"
+                    : "text-gray-500 group-hover:text-yellow-400 md:text-[20px]"
                 }
               />
 
               <span
-                className={`mt-1 text-[10px] uppercase tracking-[0.2em] hidden sm:block transition-all ${
+                className={`mt-1 hidden text-[7px] uppercase tracking-[0.14em] transition-all sm:block md:text-[9px] ${
                   active
                     ? "text-yellow-400"
                     : "text-gray-500 group-hover:text-yellow-400"

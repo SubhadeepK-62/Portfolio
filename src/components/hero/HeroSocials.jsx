@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 import {
   FaGithub,
   FaLinkedin,
@@ -9,8 +11,15 @@ import {
 
 export default function HeroSocials() {
   return (
-    <div className="absolute bottom-10 right-16 z-200 flex items-center gap-6">
-
+    <motion.div
+      className="hero-socials"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{
+        delay: 0.8,
+        duration: 0.8,
+      }}
+    >
       <a
         href="https://github.com/SubhadeepK-62"
         target="_blank"
@@ -56,13 +65,9 @@ export default function HeroSocials() {
         <FaInstagram />
       </a>
 
-      <a
-        href="mailto:subhadeep24400123072@gmail.com"
-        className="hero-social"
-      >
+      <a href="mailto:subhadeep24400123072@gmail.com" className="hero-social">
         <FaEnvelope />
       </a>
-
-    </div>
+    </motion.div>
   );
 }

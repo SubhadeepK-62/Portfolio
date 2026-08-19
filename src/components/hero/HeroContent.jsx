@@ -1,14 +1,19 @@
+import { motion } from "framer-motion";
+
 export default function HeroContent() {
   return (
-    <div
-      className="
-      absolute
-    left-20
+    <div className="hero-content">
+    <motion.div
+      className="absolute
     bottom-10
-    z-150
-    w-520px
-    text-left
-    "
+    left-15
+    z-150"
+      initial={{ opacity: 0, x: -80 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{
+        duration: 0.8,
+        ease: "easeOut",
+      }}
     >
       <h2 className="uppercase italic text-xl md:text-1xl text-yellow-400 tracking-[6px] mb-3">
         Everything is a Copy
@@ -18,7 +23,7 @@ export default function HeroContent() {
         Of a Copy of a Copy...
       </h2>
 
-      <div className="mt-5 flex gap-5">
+      <div className="mt-5 flex flex-col sm:flex-row gap-3">
         <a href="#projects" className="hero-btn-primary">
           Explore Projects
         </a>
@@ -27,6 +32,7 @@ export default function HeroContent() {
           Contact Me
         </a>
       </div>
+    </motion.div>
     </div>
   );
 }

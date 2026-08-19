@@ -1,4 +1,5 @@
 import useSectionObserver from "../hooks/useSectionObserver";
+import { motion } from "framer-motion";
 
 export default function About() {
   const ref = useSectionObserver("about");
@@ -18,11 +19,15 @@ export default function About() {
           ABOUT
         </h1>
       </div>
-      <div className="max-w-6xl mx-auto w-full">
-        <p className="text-yellow-400 uppercase tracking-[0.3em] mb-4">
-          About Me
-        </p>
-
+      <motion.div
+        className="max-w-6xl mx-auto w-full"
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{
+          duration: 0.7,
+        }}
+      >
         <h2
           className="text-5xl md:text-7xl mb-8"
           style={{ fontFamily: "Bebas Neue" }}
@@ -30,9 +35,9 @@ export default function About() {
           WHO I AM
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div>
-            <p className="text-gray-300 leading-relaxed">
+            <p className="text-gray-300 text-sm md:text-base leading-relaxed">
               I'm Subhadeep Karmakar, a B.Tech CSE student passionate about web
               development, AI, and creating meaningful digital products.
             </p>
@@ -68,7 +73,7 @@ export default function About() {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
