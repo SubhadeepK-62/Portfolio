@@ -253,8 +253,16 @@
 
 @media (max-width: 1100px) {
   .hero-name {
-    letter-spacing: -8px;
+    letter-spacing: -15px;
     font-size: 18vw;
+  }
+
+  .top-name {
+    top: 35%;
+  }
+
+  .bottom-name {
+    bottom: 22%;
   }
 
   .hero-image {
@@ -279,11 +287,11 @@
   }
 
   .top-name {
-    top: 15%;
+    top: 35%;
   }
 
   .bottom-name {
-    bottom: 22%;
+    bottom: 40%;
   }
 
   .hero-image-wrapper {
@@ -384,11 +392,11 @@
   }
 
   .top-name {
-    top: 30%;
+    top: 35%;
   }
 
   .bottom-name {
-    bottom: 30%;
+    bottom: 45%;
   }
 
   .hero-image-wrapper {
@@ -399,7 +407,7 @@
   }
 
   .hero-image {
-    width: min(98vw, 460px);
+    width: min(94vw, 460px);
     filter: drop-shadow(0 22px 40px rgba(212, 175, 55, 0.2));
   }
 
