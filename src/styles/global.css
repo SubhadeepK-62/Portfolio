@@ -23,3 +23,11 @@ a {
 button {
   cursor: pointer;
 }
+
+/* Hide custom cursor on touch devices */
+
+@media (max-width: 768px) {
+  .custom-cursor {
+    display: none;
+  }
+}
