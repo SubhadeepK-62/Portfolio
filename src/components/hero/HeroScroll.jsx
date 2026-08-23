@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 export default function HeroScroll() {
   return (
     <motion.div
-      className="absolute bottom-8 right-1/2 z-150 translate-x-1"
+      className="absolute bottom-8 right-1/2 z-150 translate-x-1/2"
       animate={{
         y: [0, 12, 0],
       }}
