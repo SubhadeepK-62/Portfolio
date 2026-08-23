@@ -10,7 +10,7 @@ export const projects = [
       "Personal portfolio to showcase projects, skills, and experience.",
     tech: ["React", "Tailwind CSS", "JavaScript"],
     github: "https://github.com/SubhadeepK-62/Portfolio",
-    live: "",
+    live: "https://subhadeep-dev.vercel.app/",
   },
 
   {
