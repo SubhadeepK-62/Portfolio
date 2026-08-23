@@ -65,27 +65,26 @@ export default function Skills() {
 
               <div className="flex flex-col gap-3">
                 {group.items.map((skill) => (
-                  <span
-                    key={skill}
+                  <div
+                    key={skill.name}
                     className="
-            px-4
-            py-3
-            rounded-xl
-
-            border
-            border-yellow-400/10
-
-            text-gray-300
-
-            transition-all
-            duration-300
-
-            hover:border-yellow-400/40
-            hover:text-yellow-400
-          "
+      flex items-center gap-3
+      px-4 py-3 rounded-xl
+      border border-yellow-400/10
+      text-gray-300
+      transition-all duration-300
+      hover:border-yellow-400/40
+      hover:text-yellow-400
+    "
                   >
-                    {skill}
-                  </span>
+                    <img
+                      src={skill.icon}
+                      alt={skill.name}
+                      className="w-5 h-5"
+                    />
+
+                    <span>{skill.name}</span>
+                  </div>
                 ))}
               </div>
             </motion.div>
