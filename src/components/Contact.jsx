@@ -53,17 +53,16 @@ export default function Contact() {
           {/* LEFT SIDE */}
           <div className="space-y-6">
             <h3 className="text-3xl font-bold text-white">
-              Let's Build Something Amazing
+              Let's Build Something Crazy!
             </h3>
 
             <p className="text-gray-400 leading-relaxed">
-              I'm always interested in discussing new projects, creative ideas,
-              internships, and opportunities.
+              Have a great idea or want to discuss about anything? Feel free to reach out.
             </p>
 
             <div className="space-y-4 mt-10">
               <a
-                href="mailto:subhadeep24400123072@gmail.com"
+                href="mailto:subhadeep24400123072@tecb.edu.in"
                 className="
             block
             p-5
@@ -77,11 +76,11 @@ export default function Contact() {
           "
               >
                 <p className="text-yellow-400 text-sm">Email</p>
-                <p className="text-gray-300">subhadeep24400123072@gmail.com</p>
+                <p className="text-gray-300">subhadeep24400123072@tecb.edu.in</p>
               </a>
 
               <a
-                href="https://github.com/YOUR_GITHUB"
+                href="https://github.com/SubhadeepK-62"
                 target="_blank"
                 rel="noreferrer"
                 className="
@@ -97,11 +96,11 @@ export default function Contact() {
           "
               >
                 <p className="text-yellow-400 text-sm">GitHub</p>
-                <p className="text-gray-300">github.com/YOUR_GITHUB</p>
+                <p className="text-gray-300">Explore the codes</p>
               </a>
 
               <a
-                href="https://linkedin.com/in/YOUR_LINKEDIN"
+                href="https://linkedin.com/in/subhadeepkarmakar"
                 target="_blank"
                 rel="noreferrer"
                 className="

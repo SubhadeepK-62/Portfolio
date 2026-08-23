@@ -16,11 +16,7 @@ export default function CustomCursor() {
 
     window.addEventListener("mousemove", moveCursor);
 
-    return () =>
-      window.removeEventListener(
-        "mousemove",
-        moveCursor
-      );
+    return () => window.removeEventListener("mousemove", moveCursor);
   }, []);
 
   return (
@@ -39,8 +35,12 @@ export default function CustomCursor() {
       duration-75
       "
       style={{
-        left: position.x - 16,
-        top: position.y - 16,
+        left: position.x - 20,
+        top: position.y - 20,
+        width: "40px",
+        height: "40px",
+        background: "rgba(212,175,55,0.4)",
+        filter: "blur(15px)",
       }}
     />
   );

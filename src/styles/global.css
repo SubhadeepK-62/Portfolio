@@ -10,6 +10,7 @@ body {
   color: #e5e2e1;
   font-family: "Manrope", sans-serif;
   overflow-x: hidden;
+  position: relative;
 }
 
 * {

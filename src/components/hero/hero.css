@@ -146,9 +146,11 @@
 }
 
 .hero-btn-secondary:hover {
-  background: #d4af37;
+  
+  transform: translateY(-4px);
 
-  color: #111;
+  box-shadow: 0 12px 35px rgba(212, 175, 55, 0.35);
+  color: #d4af37;
 }
 
 /* ===========================

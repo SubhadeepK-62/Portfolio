@@ -39,7 +39,7 @@ export default function HeroSocials() {
       </a>
 
       <a
-        href="https://facebook.com/YOUR_FACEBOOK"
+        href="https://www.facebook.com/subha.deep.111609"
         target="_blank"
         rel="noreferrer"
         className="hero-social"
@@ -47,17 +47,17 @@ export default function HeroSocials() {
         <FaFacebook />
       </a>
 
-      <a
+      {/* <a
         href="https://x.com/YOUR_X"
         target="_blank"
         rel="noreferrer"
         className="hero-social"
       >
         <FaXTwitter />
-      </a>
+      </a> */}
 
       <a
-        href="https://instagram.com/YOUR_INSTAGRAM"
+        href="https://www.instagram.com/themavericksky?igsi=bTkxajY4Z29yNGF4"
         target="_blank"
         rel="noreferrer"
         className="hero-social"

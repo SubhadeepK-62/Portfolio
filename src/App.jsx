@@ -27,17 +27,20 @@ export default function App() {
   return (
     <>
       <ShaderBackground />
+      
+
       <CustomCursor />
-      <Navbar />
 
-      <main>
-        <Hero />
-        <About />
-        <Skills />
-        <Projects />
-        <Contact />
-      </main>
-
+      <div className="relative z-10">
+        <Navbar />
+        <main>
+          <Hero />
+          <About />
+          <Skills />
+          <Projects />
+          <Contact />
+        </main>
+      </div>
       <Footer />
     </>
   );

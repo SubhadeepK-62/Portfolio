@@ -38,14 +38,11 @@ export default function About() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div>
             <p className="text-gray-300 text-sm md:text-base leading-relaxed">
-              I'm Subhadeep Karmakar, a B.Tech CSE student passionate about web
-              development, AI, and creating meaningful digital products.
+              Hey folks, this is Subhadeep Karmakar, a final year student from West Bengal, India. I'm a frontend developer specializing in React. Apart from that, I'm also a video editor and UI/UX designer.
             </p>
 
             <p className="text-gray-400 mt-6 leading-relaxed">
-              I enjoy building modern applications, learning new technologies,
-              participating in hackathons, and continuously improving my
-              problem-solving skills.
+              When I'm offline I'm probably sleeping or watching movies, yeah those are the things I love to do. Along with that, I enjoy my hobby of photography and playing badminton. <br /> A guy who loves to stay fit and always have the curiosity to learn new things.
             </p>
           </div>
 
@@ -54,21 +51,22 @@ export default function About() {
               <h3 className="text-yellow-400 font-semibold">Education</h3>
               <p className="text-gray-400 leading-9 max-w-xl">
                 B.Tech in Computer Science & Engineering
+                <br />
+                from Techno Engineering College Banipur
               </p>
             </div>
 
             <div>
               <h3 className="text-yellow-400 font-semibold">Interests</h3>
               <p className="text-gray-400 leading-9 max-w-xl">
-                Web Development, AI/ML, UI Design, Photography
+                Web Development, UI/UX, Video Editing
               </p>
             </div>
 
             <div>
               <h3 className="text-yellow-400 font-semibold">Current Focus</h3>
               <p className="text-gray-400 leading-9 max-w-xl">
-                Building projects and strengthening full-stack development
-                skills.
+                Building projects and strengthening skills to secure financial freedom and a good career
               </p>
             </div>
           </div>

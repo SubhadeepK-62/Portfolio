@@ -7,7 +7,6 @@ export const skills = [
       "JavaScript",
       "React",
       "Tailwind CSS",
-      "Vite",
     ],
   },
 

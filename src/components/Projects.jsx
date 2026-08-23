@@ -26,7 +26,7 @@ export default function Projects() {
           className="text-5xl md:text-7xl mb-12"
           style={{ fontFamily: "Bebas Neue" }}
         >
-          MY WORK
+          MY WORKS
         </h2>
 
         <div className="grid md:grid-cols-2 gap-8">

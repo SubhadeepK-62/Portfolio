@@ -1,4 +1,4 @@
-import vector from "../../assets/images/vector.png";
+import vector from "../../assets/images/vector2.png";
 import { motion } from "framer-motion";
 
 export default function HeroImage() {
