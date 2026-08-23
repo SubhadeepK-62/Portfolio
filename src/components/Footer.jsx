@@ -14,7 +14,7 @@ export default function Footer() {
             </h3>
 
             <p className="text-gray-500 text-sm">
-              Creative Developer • Web Developer • CSE Student
+              Web Developer • CSE Undergrad • UI/UX Desginer
             </p>
           </div>
 
@@ -39,7 +39,8 @@ export default function Footer() {
 
         <div className="mt-8 pt-8 border-t border-yellow-400/10 text-center">
           <p className="text-gray-600 text-sm">
-            © 2026 Subhadeep Karmakar. Built with React + Tailwind.
+            © 2026 Subhadeep Karmakar.
+            <br/>Made with ❤️ by me.
           </p>
         </div>
 

@@ -35,12 +35,12 @@ export default function CustomCursor() {
       duration-75
       "
       style={{
-        left: position.x - 20,
+        left: position.x - 30,
         top: position.y - 20,
-        width: "40px",
-        height: "40px",
+        width: "60px",
+        height: "60px",
         background: "rgba(212,175,55,0.4)",
-        filter: "blur(15px)",
+        filter: "blur(30px)",
       }}
     />
   );

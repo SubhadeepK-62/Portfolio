@@ -59,7 +59,7 @@ export default function About() {
             <div>
               <h3 className="text-yellow-400 font-semibold">Interests</h3>
               <p className="text-gray-400 leading-9 max-w-xl">
-                Web Development, UI/UX, Video Editing
+                Web Development, UI/UX, Video Editing, Graphic Designing
               </p>
             </div>
 

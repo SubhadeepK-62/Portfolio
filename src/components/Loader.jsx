@@ -34,7 +34,7 @@ export default function Loader() {
           fontFamily: "Bebas Neue",
         }}
       >
-        SUBHADEEP
+        BLENDING
       </motion.h1>
 
       <motion.h2
@@ -51,7 +51,7 @@ export default function Loader() {
           fontFamily: "Bebas Neue",
         }}
       >
-        KARMAKAR
+        PIXELS
       </motion.h2>
 
       <motion.p
@@ -65,7 +65,7 @@ export default function Loader() {
         uppercase
         "
       >
-        Loading...
+        Just a second...
       </motion.p>
     </motion.div>
   );
