@@ -42,7 +42,7 @@ export default function About() {
             </p>
 
             <p className="text-gray-400 mt-6 leading-relaxed">
-              When I'm offline I'm probably sleeping or watching movies, yeah those are the things I love to do. Along with that, I enjoy my hobby of photography and playing badminton. <br /> A guy who loves to stay fit and always have the curiosity to learn new things.
+              Along with that, I enjoy my hobby of photography and playing badminton. <br /> A guy who loves to stay fit and always have the curiosity to learn anything new.
             </p>
           </div>
 
