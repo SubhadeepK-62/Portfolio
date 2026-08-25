@@ -22,9 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-screenshots
-images
-projects
+/screenshots/
+/src/assets/images/
+/src/assets/projects/
 
 # Environment variables
 .env
