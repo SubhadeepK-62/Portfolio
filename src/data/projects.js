@@ -20,7 +20,7 @@ export const projects = [
     image: intrinsicOceanImg,
     description:
       "AI-powered conversational interface for ARGO Ocean Data Discovery and Visualization using RAG and vector databases.",
-    tech: ["React", "Flask", "PostgreSQL", "RAG"],
+    tech: ["React.js", "Flask", "PostgreSQL", "RAG"],
     github: "https://github.com/Mahir-o4/Team_Orchestra/tree/frontend",
     live: "",
   },
@@ -30,8 +30,8 @@ export const projects = [
     title: "SahaYog",
     image: sahayogImg,
     description:
-      "AI-powered conversational interface for ARGO Ocean Data Discovery and Visualization using RAG and vector databases.",
-    tech: ["React", "Flask", "PostgreSQL", "RAG"],
+      "Cooperative Gig Services Platform for Household & Community Services.",
+    tech: ["React.js", "Next.js", "Typescript", "Tailwind CSS"],
     github: "https://github.com/sujitKrS04/sahayog",
     live: "https://sahayog-virid.vercel.app/",
   },
