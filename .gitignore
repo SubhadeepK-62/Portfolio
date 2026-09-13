@@ -24,8 +24,6 @@ dist-ssr
 *.sw?
 /src/assets/images/
 /src/assets/projects/
-/screenshots/
 
 # Environment variables
 .env
-.env.*
