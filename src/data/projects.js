@@ -1,5 +1,6 @@
 import portfolioImg from "../assets/projects/portfolio.png";
 import intrinsicOceanImg from "../assets/projects/intrinsicocean.png";
+import sahayogImg from "../assets/projects/sahayog.png";
 
 export const projects = [
   {
@@ -22,5 +23,16 @@ export const projects = [
     tech: ["React", "Flask", "PostgreSQL", "RAG"],
     github: "https://github.com/Mahir-o4/Team_Orchestra/tree/frontend",
     live: "",
+  },
+
+  {
+    id: 3,
+    title: "SahaYog",
+    image: sahayogImg,
+    description:
+      "AI-powered conversational interface for ARGO Ocean Data Discovery and Visualization using RAG and vector databases.",
+    tech: ["React", "Flask", "PostgreSQL", "RAG"],
+    github: "https://github.com/sujitKrS04/sahayog",
+    live: "https://sahayog-virid.vercel.app/",
   },
 ];
